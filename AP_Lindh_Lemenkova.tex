@@ -6,6 +6,9 @@
 
 \newcommand*\printft[1]{\textsc{\lowercase{#1}}}
 
+\graphicspath{{figures/}} % path to folder with figures
+\usepackage[super]{nth}
+
 \begin{document}
 
 \title[Pareto Efficiency and RSM to Adjust Binder Content]
@@ -53,11 +56,67 @@ In this paper, we propose a framework for a number of experimental designs for e
 The project is based on the empirical geotechnical works performed in the laboratory of the Swedish Geotechnical institute (SGI). The technical aim was to fabricate the blended mixture of binder from the use different pure binders which effects in the best effective way on soil stabilization. To this end, cement, lime, slag and fly ash were used as binders for stabilizing soil samples. The framework included a number of existing standardised technical workflow of soil stabilization modified and applied for our case.
 
 \section{Essentials regarding the binder selection}
-A mixture of two or three different binders is commonly acceptable for soil stabilization in general and for DMM method in particular \cite{BergmanLarsson,Naqshabandy,Paniagua}. In the last case, lime-cement columns are fabricated using a special machine. Previous research shown that a mixture of cement and fly ash contributes to gain of strength better compared to Portland cement taken as a single binder \cite{Yaxuetal2022,Vukicevicetal}. Other cases demonstrated that there is a positive reaction between lime and fly ash which can be used for improved stabilization outputs \cite{GoswamiSingh,Raoetal2008,Knapiketal2015}. 
+A mixture of two or three different binders is commonly acceptable for soil stabilization in general and for DMM method in particular \cite{BergmanLarsson,Naqshabandy,Paniagua}. In the last case, lime-cement columns are fabricated using a special machine. Previous research shown that a mixture of cement and fly ash contributes to gain of strength better compared to Portland cement taken as a single binder \cite{Yaxuetal2022,Vukicevicetal}. Other cases shown that there is a positive reaction between lime and fly ash which can be used for improved stabilization outputs \cite{GoswamiSingh,Raoetal2008,Knapiketal2015}. 
 
-Blended binders have been successfully used for the past thirty years for the purpose of soil stabilization \cite{Ghazy,Consolietal2019,Lindh2001,Leeetal2019,Filho,Yietal2014,Guetal2014,Yangetal2015}. To improve the efficiency of soil stabilisation, some commercial binder suppliers developed their own blends of binders. Such binders can be classified as follows:
+Blended binders have been successfully used for the past thirty years for the purpose of soil stabilization \cite{Ghazy,Consolietal2019,Lindh2001,Leeetal2019,Filho,Yietal2014,Guetal2014,Yangetal2015}. To improve the efficiency of soil stabilisation, some commercial binder suppliers developed their own blends of binders. Such binders can be classified as follows: 1). General Purpose (GP) cement; 2). General Blend (GB) cement; 3). Cementitious triple and quaternary blends of binders mixed from combinations of fly ash, GP cement, ground granulated blast furnace slag (GGBFS) and lime; 4). Hydrated lime; 5). Cement/asphalt blends. The applicability of different binders is summarised in Table 1.
+
+However, there is lack of reported experience regarding the optimisation of different mixtures of binders for stabilisation purposes specifically for Sweden. Selected papers reported cases of binder optimisation using deep mixing methods, for instance at the SGI (Holm, 2000, 2003). These results are shown in Table 2. 
 
 \section{Materials and methods}
+
+\begin{figure}[H]\centering
+	\includegraphics[width=0.99\linewidth]{Fig_01.jpg}
+	\caption{Binders traditionally used for DMM}\label{fig1}
+\end{figure}   
+\unskip
+
+\begin{figure}[H]\centering
+	\includegraphics[width=0.99\linewidth]{Fig_02.jpg}
+	\caption{Boundaries best suited for various binders}\label{fig2}
+\end{figure}   
+\unskip
+
+\begin{figure}[H]
+	\includegraphics[width=0.80\linewidth]{Fig_03.jpg}
+	\caption{(a): CCD for k=2 with start points and rotatable \nth{2}-order designs. (b): $3^2$ factorial design; (c): A comparison between the 2-factor CCD (continuous line) and a $2^2$ factorial design (dashed line).}\label{fig3}
+\end{figure}   
+\unskip
+
+\begin{figure}[H]
+	\includegraphics[width=0.99\linewidth]{Fig_04.jpg}
+	\caption{Water content measured in stored soil used as raw material in stabilisation tests. (a): test 1; (b): test 2.}\label{fig4}
+\end{figure}   
+\unskip
+
+\begin{figure}[H]
+	\includegraphics[width=0.99\linewidth]{Fig_06.jpg}
+	\caption{Pareto chart of the effects that notably change the variable W\_AFTER at p=0.05.}\label{fig6}
+\end{figure}   
+\unskip
+
+\begin{figure}[H]
+	\includegraphics[width=0.99\linewidth]{Fig_07.jpg}
+	\caption{MCV vs water for treated and raw soil. The 95\%-confidence bound is shown by dash-dot lines.}\label{fig7}
+\end{figure}   
+\unskip
+
+\begin{figure*}[h!]
+	\includegraphics[width=0.99\linewidth]{Fig_08.jpg}
+	\caption{Pareto charts: modelled responses from four different tests. Subfigures 1 and 3 show face centre CCD, while 2 and 4 mean standard CCD. The response variable is modified water content before and after stabilisation}\label{fig8}
+\end{figure*}   
+\unskip
+
+\begin{figure*}[h!]
+	\includegraphics[width=0.99\linewidth]{Fig_09.jpg}
+	\caption{Predicted against residual values from the tests}\label{fig9}
+\end{figure*}   
+\unskip
+
+\begin{figure*}[h!]
+	\includegraphics[width=0.99\linewidth]{Fig_11.jpg}
+	\caption{Pareto charts and RMS from simplex lattice design with UCS as a response variable. Subfigures C and D -- quadratic model; A and B -- \emph{idem} with interior points. Notable effects are visible in subfigures A and C}\label{fig11}
+\end{figure*}   
+\unskip
 
 \newpage
 \section{Discussion and Conclusions}
