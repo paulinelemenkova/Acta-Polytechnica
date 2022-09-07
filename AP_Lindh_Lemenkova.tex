@@ -210,9 +210,30 @@ Here two design points corresponded to the pure lime and pure cement, respective
 The experimental loop comprised 40 specimens, which signifies that each point in the design signifies four specimens, except for the centre point which stands for eight samples. Major linear effects and the 2-way interconnections significantly impacted the variations in the water content.
 
 \subsection{ANOVA}
-We estimated the design of the experiment by the analysis of variance (ANOVA) technique with the significance level at 0.05. The ANOVA was used to confirm that there is no linear or quadratic main effects from the factors and no interaction between them, respectively. The results of the ANOVA are summarised in Table 3 with p levels described as the probability of rejecting the null hypothesis when it is actually true. In the case of p=0.05 this means that there are 5\% probability that any relation between variables identified in the samples is random \cite{StatSoft}.
+We estimated the design of the experiment by the analysis of variance (ANOVA) technique with the significance level at 0.05. The ANOVA was used to confirm that there is no linear or quadratic main effects from the factors and no interaction between them, respectively. The results of the ANOVA are summarised in Table \ref{tab:2} with p levels described as the probability of rejecting the null hypothesis when it is actually true. In the case of p=0.05 this means that there are 5\% probability that any relation between variables identified in the samples is random \cite{StatSoft}. The notations used in Table  \ref{tab:2} are defined in the List of Symbols \ref{symb}.
 
-%-------------------checked 07.0.2022
+%\begin{table}[htbp]
+\begin{table*}[t]
+\centering
+\caption{ANOVA statistical analysis. Dependent variable: water content upon stabilization (W\_After) \label{tab:2}}
+\begin{tabularx}{\textwidth}{c *{6}{Y}}
+\toprule
+Factor & \multicolumn{5}{l}{Anova; $R^2=0.79783$; Adj:0.76809, 2-factors, 1 block, 40 Runs, MS‑res=0.10063. } \\
+\cmidrule(lr){2-4} \cmidrule(l){5-6}
+  & SS & df & MS & F & p \\
+\midrule
+(1) Cem. (Linear)  & 8.3162 & 1 & 8.3162 & 82.640 & 0.0000 \\
+Cem. (Quadratic) & 0.0353 & 1 & 0.0353 & 0.351 & 0.5572 \\
+(2) Q.lime. (Linear) & 4.1409 & 1 & 4.1409 & 41.148 & 0.0000 \\
+Q.lime (Quadratic) & 0.2492 & 1 & 0.2492 & 2.476 & 0.1247 \\
+1(L) by 2(L) (interaction) & 0.7843 & 1 & 0.7843 & 7.793 & 0.0085 \\
+Error & 3.4215 & 34 & 0.1006 & -- & -- \\
+Total SS & 16.923 & 39 & -- & -- & -- \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+%-------------------checked 07.09.2022
 
 
 \begin{figure}[H]
@@ -274,6 +295,7 @@ We recommend to take into account the following closing remarks for similar rela
 
 The specific value of our research is that the methods and techniques have been borrowed from other industrial areas such as the automotive, chemical and process industries. Thus, we used the RSM as an advanced and efficient technique which can be used to optimise binder type and amount in soil stabilisation. Using this approach, we have conducted extensive experiments on soil stabilisation using new binder agents and novel methods of soil stabilisation which required different testing and evaluation methods in order to benchmark the performance of the framework. 
 
+\section{Abbreviations and notations}\label{symb}
 \begin{nomenclature}
 \item{UCS}{Unconfined Compressive Strength}
 \item{BBD}{Box-Behnken Design}
@@ -285,6 +307,13 @@ The specific value of our research is that the methods and techniques have been 
 \item{OMC}{Optimum Moisture Content}
 \item{RSM}{Response Surface Methodology}
 \item{SGI}{Swedish Geotechnical Institute}
+\item{R-sqr}{Coefficient of multiple determination (=$1-SS_{e}/SS_{t}$)}
+\item{Adj}{Adjusted $R^2$}
+\item{SS}{Sum of Squares, for each treatment, error and total}
+\item{df}{Degrees of freedom}
+\item{MS}{Means of squares}
+\item{F}{F test. $F=MS_{treatments}/MS_{e}$}
+\item{p}{p-level}
 \end{nomenclature}
 
 \begin{acknowledgements}
