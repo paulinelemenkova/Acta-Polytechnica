@@ -113,7 +113,7 @@ Statistical analysis enables to separate local features and standard classificat
 
 \section{Stabilization quality control}
 
-Robust estimation methods used in geotechnical engineering, such as soil stabilisation, are performed under real conditions which may include outliers in statistical data analysis. For instance, \emph{in-situ} setting may vary locally and include various soil grading, water content, mineral content in specimens, etc. Therefore, tested methods should be fitted to the prevailing natural conditions that often include a large number of variables. To achieve the high level of soil strength, which indicates the high-quality stabilization process, the blended mixture should also be independent from variations in binder amount, homogeneity of mixtures and compaction. This ensures the objectivity of the statistical experiment using separated variables. Despite the complexity of the adopted approaches, it is important to optimise the workflow of data analysis, to achieve the ultimate goal of optimisation of binders for investigating the performance of soil in various scenarios, e.g., with varied ratio and content of binders, water, testing various soil samples.
+Robust estimation methods used in geotechnical engineering, such as soil stabilisation, are performed under real conditions which may include outliers in statistical data analysis. For instance, \emph{in-situ} setting may vary locally and include various soil grading, water content, mineral content in specimens, etc. Therefore, tested methods should be fitted to the prevailing natural conditions that often include a large number of variables. To achieve the high level of soil strength, which indicates the quality of the stabilization process, blended mixture should also be independent from variations in binder amount, homogeneity of mixtures and compaction. This ensures the objectivity of the statistical experiment using separated variables. Despite the complexity of the adopted approaches, it is important to optimise the workflow of data analysis, to achieve the ultimate goal of optimisation of binders for investigating the performance of soil in various scenarios, e.g., with varied ratio and content of binders, water, testing various soil samples.
 
 Defining the determinant parameters for the stabilised soil are essential to design a high-quality soil-binder blend. Methods of parametrisation are adopted in the experimental work using background knowledge and pre-processing tests. These steps are crucial for the smooth workflow of the experimental work. With this regard, it is principally important to note that evaluation of the amount of binders differs from the procedure of testing their types. These are the two subproblems that are to be solved in the same framework matching the optimisation criteria of soil stabilization. 
 
@@ -139,20 +139,29 @@ The method of Central Composite Design (CCD) is one of the most accepted \nth{2}
 \end{bmatrix}
 \end{equation}
 
-It comprises the 2*\emph{k} factorial with n\textsubscript{f} runs, 2*\emph{k} axial runs, and n\textsubscript{c} centre runs. The \emph{k}=2 CCD is presented in Figure \ref{fig3}. The mathematical approach is based on the matrix which is derived from the axial points, with 2*\emph{k} rows depending on the  factors which mean the binder content. In our case each factor is the binder which is  consecutively located at \emph{a} and all other factors which might influence soil stabilization are at zero. This enables to evaluate the influence of binders as factors controlling the gain of strength. The value of \emph{a} is opted in accordance to the runs of binder testing. Changing values in binders give the design of mixture the required properties which lead to the increased gain in strength of soil.
+It comprises the $2^\emph{k}$ factorial with n\textsubscript{f} runs, 2*\emph{k} axial runs, and n\textsubscript{c} centre runs. The \emph{k}=2 CCD is presented in Figure \ref{fig3}. The mathematical approach is based on the matrix which is derived from the axial points, with 2*\emph{k} rows depending on the  factors which mean the binder content. In our case each factor is the binder which is  consecutively located at \emph{a} and all other factors which might influence soil stabilization are at zero. This enables to evaluate the influence of binders as factors controlling the gain of strength. The value of \emph{a} is opted in accordance to the runs of binder testing. Changing values in binders give the design of mixture the required properties which lead to the increased gain in strength of soil.
 
 The input of each factor in this approach is defined at least at three levels, low, high and medium. The response corresponds to the general model equation, Eq. \ref{eq2}.
 
-\begin{fleqn}
+%\begin{fleqn}
 \begin{equation}\label{eq2}
 \begin{aligned}[b]
 y=\beta_0+\beta_{1}x_{1}+\ldots+\beta_{\kappa}x_{\kappa}+\beta_{12}x_{1}x_{2}+\beta_{13}x_{1}x_3\\
-+\ldots+\beta_{\kappa-1,\kappa}x_{\kappa-1}x_{\kappa}
++\ldots+\beta_{\kappa-1,\kappa}x_{\kappa-1}x_{\kappa}+\beta_{11}x_{1}^2+\ldots+ \\\beta_{\kappa\kappa}x_{kappa}^2+\varepsilon
 \end{aligned}
 \end{equation}
-\end{fleqn}
+%\end{fleqn}
 
-%\newpage
+where $\beta_i$ represents the regression coefficient and $\varepsilon$ represents the statistical error so that $\varepsilon\in N(0,\sigma^2)$.
+
+As can be inferred from the formulation of the feature matching problem, fitting a model to the observed values of the dependent variable \emph{y} includes three essential steps of data processing: 
+\begin{itemize}
+	\item main impacts for factors $x_1, \ldots x_\kappa$;
+	\item interactions between factors $x_{1}x_{2}, x_{1}x_{3}, \ldots, x_{\kappa-1}x_{\kappa})$; 
+	\item quadratic components of factors $x_{1}^2, \ldots, x_{kappa}^2$. 
+\end{itemize}
+
+\newpage
 \begin{figure}[H]
 	\includegraphics[width=0.80\linewidth]{Fig_03.jpg}
 	\caption{(a): CCD for k=2 with start points and rotatable \nth{2}-order designs. (b): $3^2$ factorial design; (c): A comparison between the 2-factor CCD (continuous line) and a $2^2$ factorial design (dashed line).}\label{fig3}
