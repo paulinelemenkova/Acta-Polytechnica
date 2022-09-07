@@ -210,7 +210,7 @@ Here two design points corresponded to the pure lime and pure cement, respective
 The experimental loop comprised 40 specimens, which signifies that each point in the design signifies four specimens, except for the centre point which stands for eight samples. Major linear effects and the 2-way interconnections significantly impacted the variations in the water content.
 
 \subsection{ANOVA}
-We estimated the design of the experiment by the analysis of variance (ANOVA) technique with the significance level at 0.05. The ANOVA was used to confirm that there is no linear or quadratic main effects from the factors and no interaction between them, respectively. The results of the ANOVA are summarised in Table \ref{tab:2} with p levels described as the probability of rejecting the null hypothesis when it is actually true. In the case of p=0.05 this means that there are 5\% probability that any relation between variables identified in the samples is random \cite{StatSoft}. The notations used in Table  \ref{tab:2} are defined in the List of Symbols \ref{symb}.
+We estimated the design of the experiment by the analysis of variance (ANOVA) technique with the significance level at 0.05. The ANOVA was used to confirm that there is no linear or quadratic main effects from the factors and no interaction between them, respectively. The results of the ANOVA are summarised in Table \ref{tab:2} with p levels described as the probability of rejecting the null hypothesis when it is actually true. In the case of p=0.05 this means that there are 5\% probability that any relation between variables identified in the samples is random \cite{StatSoft}. The notations used in Table \ref{tab:2} are defined in the List of Symbols \ref{symb}.
 
 %\begin{table}[htbp]
 \begin{table*}[t]
@@ -272,6 +272,13 @@ Total SS & 16.923 & 39 & -- & -- & -- \\
 \end{figure*}   
 \unskip
 
+\section{Simplex Lattice Design}
+We used the proposed simplex design which consists of the two parts: 1) simplex-lattice; 2) simplex-centroid design. These two types of design are complemented with constraints. The real-time conditions accurately record changing state of the computed variables. Thus, if binder requires an activator, e.g., GGBFS, its pure blend will affect the results of the test which requires the assignment of the upper constraint. Figure \ref{fig10}(b) demonstrates the design for the three components and simplex lattice design of the polynomial order 2.
+
+The existing constrains in the simplex design is as follows. The cycles of the tests occur on the boundary of the model and the predictions in the interior can be uncertain. Besides, the design cannot be used as a universal approach for testing binders, since it does not contain complete mixtures, but only binary or pure mixtures. At the same time, the interactions between all the binder components as stabilizing agents might be negative as well. The solution in such cases consists in adding the interior points, in case if the complete design region is of interest and requires extrapolation. 
+
+To increase the resolution, the experimental setup can be adjusted by the increase of cycles from 6 to 10. The results regarding the fabrication of soil-binders mixture by simple lattice approach are presented in Figure \ref{fig11}. The subfigures A and B show the results from the augmented simplex lattice design with 20 tests, while subfigures C and D illustrate the result from a $3^2$ simplex lattice design with 12 runs. Subplots A and C show the estimated significant effects, while those presented in subplots B and D are shown as a response surface. The interior points in this case did not affect the final results. Empirically, both the response surfaces demonstrate a positive interaction between lime and GGBFS regarding the gain in UCS.
+
 \newpage
 \section{Discussion and Conclusions}
 
@@ -302,6 +309,7 @@ The specific value of our research is that the methods and techniques have been 
 \item{ANOVA}{ANalysis Of VAriance}
 \item{CCD}{Central Composite Design}
 \item{DMM}{Deep Mixing Method}
+\item{GGBFS}{Ground Granulated Blast Furnace Slag}
 \item{ICL}{Initial Consumption of Lime}
 \item{MCV}{Moisture Compaction Value}
 \item{OMC}{Optimum Moisture Content}
