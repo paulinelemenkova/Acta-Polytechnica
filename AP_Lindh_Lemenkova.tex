@@ -124,7 +124,7 @@ The final design of the presented work was performed based on the principles dis
 The aim of the undertaken study was a quantitative-qualitative analysis of binders for soil stabilization. Thus, first, we examined the types of binders which suit best for stabilization of the given soil type (clay till). Second, we optimised the amount of these binders required to achieve the desired quality of soil using statistical analysis. As a results of these test, the strength characteristics of soil was improved significantly after stabilisation process. Thus, the maximum UCS was achieved with the optimum amount of binder. The included statistical analysis enabled to ensure the economic improvements of works through optimisation of the process. The CCD and the BBD methods were applied and integrated for quantity evaluation.
 
 \section{Results}
-\subsection{Central Composite Design (CCD)}
+\subsection{Central Composite Design (CCD) as a Factorial Experiment}
 The method of Central Composite Design (CCD) is one of the most accepted \nth{2}-order experimental designs in engineering based on the response surface methodology (RSM) \cite{Montgomery2019} and matrix approach, \ref{eq1}. 
 
 \begin{equation}\label{eq1}
@@ -161,12 +161,27 @@ As can be inferred from the formulation of the feature matching problem, fitting
 	\item quadratic components of factors $x_{1}^2, \ldots, x_{kappa}^2$. 
 \end{itemize}
 
+Note that hypothesis are made concerning the impact of factors to analyse the effects from combinations of the values from the factors \cite{StatSoft}. Using this general model we has benefits in several aspects as follows:
+
+\begin{enumerate}
+	\item The CCD method is adaptable for in the search of optimum in the response from factors. It enables to find the extreme values and saddle points which correspond to the optimal regions.
+	\item The CCD presents the feasible solutions to evaluate the parameters.
+	\item The applications of the CCD model is possible for different domains of industrial design with specific assumptions
+	\item Additionally, despite the CCD model is not suitable for the whole factorial range, a good approximate through loops of the adjustments of the true response function can result in the optimised operation region achieved in parts, e.g. narrow range around the best values.
+	\item A combinatorial approach employed for finding the decisions can be used auxiliary for determining the directions of the optimum, based on the choice of levels of the independent factors of the model
+	\item The \nth{2}-order models and the CCD as a factorial experiments perform a close link and can be used complementarily. 
+\end{enumerate}
+
+The CCD with $\kappa=2$ is a $2^2$ factorial design which employs the combinatorial approach to solving the optimisation problem with 4 axial runs, Figure \ref{fig3}(a). This design includes loops used to fit the \nth{2}-order model \cite{Montgomery2019}. If a face-centred CCD with a $\kappa=2$  the treatment combination is applied exactly as in a $3^2$ design,  Figure \ref{fig3}(b). Discovered correspondences by the CCD and factorial design also includes certain constraints on factor combinations for a standard CCD. 
+
 \newpage
 \begin{figure}[H]
 	\includegraphics[width=0.80\linewidth]{Fig_03.jpg}
 	\caption{(a): CCD for k=2 with start points and rotatable \nth{2}-order designs. (b): $3^2$ factorial design; (c): A comparison between the 2-factor CCD (continuous line) and a $2^2$ factorial design (dashed line).}\label{fig3}
 \end{figure}   
 \unskip
+
+Thus, a high level of both binders (cement and lime) is not applicable since both binders require for water which leads to the conflict of variables.
 
 \begin{figure}[H]
 	\includegraphics[width=0.99\linewidth]{Fig_04.jpg}
