@@ -27,13 +27,12 @@
 \institution{third}{Université Libre de Bruxelles (ULB), École polytechnique de Bruxelles (Brussels Faculty of Engineering), Laboratory of Image Synthesis and Analysis (LISA). Campus de Solbosch, ULB -- LISA CP165/57, Avenue Franklin D. Roosevelt 50, B-1050 Brussels, Belgium}
 
 \begin{abstract}
-In this paper, we present a new framework for improvement of engineering properties of soil using advanced method of stabilization with blended binders. The effects of binder ratios and water content on strength were evaluated by statistical methods and Pareto charts. Clay till was collected from the Yttre Ringvägen, Sweden. Quicklime hydrated lime, cement, slag were used as pure binders and blended mixes. The statistical analysis included quadratic model, regression analysis and ANOVA to analyse the efficiency and quality of tests. Two variables were examined: 1) effects from the amount of binder; 2) interaction between cement/lime/slag in changed ratio: 30-50-20\%; 50-50-0\%; 100-0-0\%. Three Response Surface Methodology (RSM) techniques were evaluated, compared and presented: 1) Central Composite Design (CCD) 2) Box-Behnken Design (BBD) 3) Simplex Lattice Design. The increase of cement improved the stabilization performance followed by slag and lime.
+In this paper, we present a new framework for improvement of engineering properties of soil using advanced method of stabilization with blended binders. The effects of binder ratios and water content on strength were evaluated by statistical methods and Pareto charts. Clay till was collected from the Yttre Ringvägen, Sweden. Quicklime, slag (GGBFS) and ordinary Portland cement (OPC) were used as pure binders and blended mixes. The statistical analysis included quadratic model, regression analysis and ANOVA to analyse the efficiency and quality of tests. Two variables were examined: 1) effects from the amount of binder; 2) interaction between OPC/lime/GGBFS in changed ratio: 30-50-20\%; 50-50-0\%; 100-0-0\%. Three Response Surface Methodology (RSM) techniques were evaluated, compared and presented: 1) Central Composite Design (CCD) 2) Box-Behnken Design (BBD) 3) Simplex Lattice Design. The increase of OPC improved the stabilization performance followed by slag and lime.
 \end{abstract}
 
-\keywords{soil stabilisation, simplex experimental design, binder, cement, statistical analysis}
+\keywords{soil stabilisation, simplex experimental design, binder, OPC, statistical analysis}
 
 \maketitle
-
 
 \section{Introduction}
 
@@ -43,24 +42,24 @@ Despite its widespread applications in civil engineering and extensive existing 
 
 At the same time, the effective soil stabilization is crucial for safe road constructions and engineering works, especially in the northern regions with harsh environmental and climate conditions that create challenges for the needs of infrastructure \citep{Dahlinetal1999,ROTHHAMEL2022100735,Lindh2004,VESTIN2018146,Lemenkov2021a,Lemenkov2021b,Eigenbrod}. These challenges may be regarded as inherently coming from unique physical and mechanical properties of soil collected in real-world environment, rather than theoretical models presented in technical guidance. The importance of experiments on soil stabilization consists in the complexity of real case situations with earthworks constructions. Soil is a highly variable porous structure formed as a mixture of organic matter, minerals and rocks, chemical components (gases or liquids), and biological particles (microorganisms). 
 
-While much progress has been made in soil stabilization techniques to address various aspects of the above challenges, many issues are still far from being resolved. Particularly, these appear lacking an effective and standardised framework for taking account of binder optimisation during the process of soil stabilization. The majority of the accepted in situ techniques of soil stabilization use the approach when stabilization agent is distributed over the soil and mixed with one binder. The most widely used binder is lime with numerous examples of the existing cases studies \citep{Greaves,RaoThyagaraj,Rogersetal2000,ATTOHOKINE1995283,ROBIN2014211,Harichane,GlendinningRogers}. Cement is the next widely used stabilizng agent. To mention a few examples of utilizing cement as a binder: \citep{Prusinski,Bhattacharjaetal2003,Lindh202201,Lindh202102,KULKARNI2022125363}. The reaction of lime and cement with soil during stabilization differs and has the pros and contras, as discussed in previous literature \citep{Mahedi,KOLIAS2005301,BARMAN20221319,Lindhetal2000,Chewetal2004,KOOHMISHI2022100726}. 
+While much progress has been made in soil stabilization techniques to address various aspects of the above challenges, many issues are still far from being resolved. Particularly, these appear lacking an effective and standardised framework for taking account of binder optimisation during the process of soil stabilization. The majority of the accepted in situ techniques of soil stabilization use the approach when stabilization agent is distributed over the soil and mixed with one binder. The most widely used binder is lime with numerous examples of the existing cases studies \citep{Greaves,RaoThyagaraj,Rogersetal2000,ATTOHOKINE1995283,ROBIN2014211,Harichane,GlendinningRogers}. OPC is the next widely used stabilizng agent. To mention a few examples of utilizing OPC as a binder: \citep{Prusinski,Bhattacharjaetal2003,Lindh202201,Lindh202102,KULKARNI2022125363}. The reaction of lime and OPC with soil during stabilization differs and has the pros and contras, as discussed in previous literature \citep{Mahedi,KOLIAS2005301,BARMAN20221319,Lindhetal2000,Chewetal2004,KOOHMISHI2022100726}. 
 
 The advantages of lime as a binder are as follows: 1) long period of exploitation and workability; 2) enables high level of homogeneity in the mixtures with soil; 3) quicklime is effective well to decrease the amount of water. However, there are also certain disadvantages of lime which can be mentioned as follows: 1) lime needs certain conditions regarding mineral content and grading of soil; 2) although lime does increase strength of soil, the process is rather slow; 3) organic content of the soil may affect the performance of lime.
 
-The advantages of cement as a binder include the following ones: 1) cement ensure high level of strength during stabilization; 2) using cement increases the speed of strength gain; 3) cement well reacts with water and enables fabricating cement slurry; 4) cement has higher robustness regarding soil grading compared to lime; 5) organic content in soil does not affect cement performance as much as lime. Nevertheless, some drawbacks of cement as a binder should also be mentioned: 1) the effects from cement remain for a shorter time; 2) the use of cement implies the significant amount of compaction work; 3) using cement as a binder results in lower homogeneity of cement-soil mixture, compared to lime-soil mixture.
+The advantages of OPC as a binder include the following ones: 1) OPC ensure high level of strength during stabilization; 2) using OPC increases the speed of strength gain; 3) OPC well reacts with water and enables fabricating OPC slurry; 4) OPC has higher robustness regarding soil grading compared to lime; 5) organic content in soil does not affect OPC performance as much as lime. Nevertheless, some drawbacks of OPC as a binder should also be mentioned: 1) the effects from OPC remain for a shorter time; 2) the use of OPC implies the significant amount of compaction work; 3) using OPC as a binder results in lower homogeneity of OPC-soil mixture, compared to lime-soil mixture.
 
-The performance of binder during stabilization and its reaction with soil ultimately explains the difference in the effects from lime and cement. Aluminium and silica minerals and water are necessary for lime  to produce pozzolanic reactions. Their main effects include soil cementation with increased higher strength, reduced deformability, higher durability \citep{DISANTE2022100742,AkulaLittle,1988240,VITALE201736}. These minerals can be already present naturally or can be mixed with lime during stabilization. The advantage of the pozzolanic reaction is that it ensures the increase in strength of ground which lasts over years. In contrast, cement or cementitious binders are less sensitive and only need water for effective reaction. Hardening starts immediately and the gain of strength in the cement-soil mixture increases exponentially with the maximum value achieved after 28 days \citep{Bell1995,Makusa}. 
+The performance of binder during stabilization and its reaction with soil ultimately explains the difference in the effects from lime and OPC. Aluminium and silica minerals and water are necessary for lime  to produce pozzolanic reactions. Their main effects include soil OPCation with increased higher strength, reduced deformability, higher durability \citep{DISANTE2022100742,AkulaLittle,1988240,VITALE201736}. These minerals can be already present naturally or can be mixed with lime during stabilization. The advantage of the pozzolanic reaction is that it ensures the increase in strength of ground which lasts over years. In contrast, OPC or OPCitious binders are less sensitive and only need water for effective reaction. Hardening starts immediately and the gain of strength in the OPC-soil mixture increases exponentially with the maximum value achieved after 28 days \citep{Bell1995,Makusa}. 
 
 Various soil types behave differently during the stabilization process \citep{BhattacharjaBhatty,Burroughs2008,Renjithetal2020,VENDAOLIVEIRA2018336,Wall}. Therefore, there is no unique recipe for the mixture of stabilisation agents. As a response to this problem, the objective of the stabilization methods is to correctly select binders and adjust their amounts and ratios in order to achieve the effective stabilization results. Hence, binders should be defined and regulated carefully with respect with the in situ conditions and parameters of soil. For example, sometimes blended binders ensure the best performance, while in other cases effects from various binders on  soil should be tested empirically. Very often, blended binders ensure the best performance of binder-soil mixture which is the goal of stabilization and required workability of ground \citep{Schanz,Kangetal2019}. 
 
 In this paper, we propose a framework for a number of experimental designs for establishing an optimal technique of soli stabilization tested for different types and blended binders. The objective of the study is to contribute to the development of technical methods of robust soil stabilization through binder optimisation. The goal was to indicate the optimal mixture of stabilizing agents regarding economical limitations. The experiment revealed both the effective and not effective interactions between the different stabilizing agents and their reaction with soil over time during stabilization process. 
 
-The project is based on the empirical geotechnical works performed in the laboratory of the Swedish Geotechnical institute (SGI). The technical aim was to fabricate the blended mixture of binder from the use different pure binders which effects in the best effective way on soil stabilization. To this end, cement, lime, slag and fly ash were used as binders for stabilizing soil samples. The framework included a number of existing standardised technical workflow of soil stabilization modified and applied for our case.
+The project is based on the empirical geotechnical works performed in the laboratory of the Swedish Geotechnical institute (SGI). The technical aim was to fabricate the blended mixture of binder from the use different pure binders which effects in the best effective way on soil stabilization. To this end, OPC, lime, GGBFS and fly ash were used as binders for stabilizing soil samples. The framework included a number of existing standardised technical workflow of soil stabilization modified and applied for our case.
 
 \section{Essentials on binder selection}
-A mixture of two or three different binders is commonly acceptable for soil stabilization in general and for DMM method in particular \cite{BergmanLarsson,Naqshabandy,Paniagua}. In the last case, lime-cement columns are fabricated using a special machine. Previous research shown that a mixture of cement and fly ash contributes to gain of strength better compared to Portland cement taken as a single binder \cite{Yaxuetal2022,Vukicevicetal}. Other cases shown that there is a positive reaction between lime and fly ash which can be used for improved stabilization outputs \cite{GoswamiSingh,Raoetal2008,Knapiketal2015}. 
+A mixture of two or three different binders is commonly acceptable for soil stabilization in general and for DMM method in particular \cite{BergmanLarsson,Naqshabandy,Paniagua}. In the last case, lime-OPC columns are fabricated using a special machine. Previous research shown that a mixture of OPC and fly ash contributes to gain of strength better compared to Portland OPC taken as a single binder \cite{Yaxuetal2022,Vukicevicetal}. Other cases shown that there is a positive reaction between lime and fly ash which can be used for improved stabilization outputs \cite{GoswamiSingh,Raoetal2008,Knapiketal2015}. 
 
-Blended binders have been successfully used for the past thirty years for the purpose of soil stabilization \cite{Ghazy,Consolietal2019,Lindh2001,Leeetal2019,Filho,Yietal2014,Guetal2014,Yangetal2015}. To improve the efficiency of soil stabilisation, some commercial binder suppliers developed their own blends of binders. Such binders can be classified as follows: 1). General Purpose (GP) cement; 2). General Blend (GB) cement; 3). Cementitious triple and quaternary blends of binders mixed from combinations of fly ash, GP cement, ground granulated blast furnace slag (GGBFS) and lime; 4). Hydrated lime; 5). Cement/asphalt blends. In Sweden the use of blended binders is increasingly raising since 1970s, Figure \ref{fig1}. The Swedish cement and lime industry encouraged the use of additives with regard to soil type, Figure \ref{fig2}. Nowadays, the use of mixed binders in deep mixing have increased up to 100\%, see Figure \ref{fig1}.   
+Blended binders have been successfully used for the past thirty years for the purpose of soil stabilization \cite{Ghazy,Consolietal2019,Lindh2001,Leeetal2019,Filho,Yietal2014,Guetal2014,Yangetal2015}. To improve the efficiency of soil stabilisation, some commercial binder suppliers developed their own blends of binders. Such binders can be classified as follows: 1). General Purpose (GP) OPC; 2). General Blend (GB) OPC; 3). OPCitious triple and quaternary blends of binders mixed from combinations of fly ash, GP OPC, ground granulated blast furnace slag (GGBFS) and lime; 4). Hydrated lime; 5). OPC/asphalt blends. In Sweden the use of blended binders is increasingly raising since 1970s, Figure \ref{fig1}. The Swedish OPC and lime industry encouraged the use of additives with regard to soil type, Figure \ref{fig2}. Nowadays, the use of mixed binders in deep mixing have increased up to 100\%, see Figure \ref{fig1}.   
 
 The applicability of different binders is summarised in Table \ref{tab:1}. The notations in the Table \ref{tab:1}: GP - Poorly graded gravel and rushed rock; GW - Well-graded gravel; GM - Silty gravel; GC - Clayey gravel; SP - clean sand, poorly graded; SW - Clean sand - well graded; CL - Low plasticity sandy/silty clay; CH - High plasticity heavy clay. 1 – Excellent; 2 – Satisfactory; 3 – Not suitable.
 
@@ -74,25 +73,25 @@ Binder type & \multicolumn{4}{c}{Course-grained soil} & \multicolumn{2}{c}{Fine-
 \cmidrule(lr){2-5} \cmidrule(l){6-7}
   & GP & GW & GM \& GC & SP \& SW & CL & CH \\
 \midrule
-GP Cement (A) & 1 & 1 & 1 & 2 & 2 & 3 \\ 
-GB Cement (B) & 1 & 1 & 1 & 1 & 1 & 2 \\ 
-Cementitious blends (C) &  1 & 1 & 1 & 1 & 1 & 3 \\ 
-Lime \& cement (C) & 3 & 3 & 2 & 3 & 2 & 1 \\ 
+GP OPC (A) & 1 & 1 & 1 & 2 & 2 & 3 \\ 
+GB OPC (B) & 1 & 1 & 1 & 1 & 1 & 2 \\ 
+OPCitious blends (C) &  1 & 1 & 1 & 1 & 1 & 3 \\ 
+Lime \& OPC (C) & 3 & 3 & 2 & 3 & 2 & 1 \\ 
 Lime \& fly ash (C) & 3 & 1 & 1 & 3 & 2 & 2 \\ 
 Lime (D) & 2 & 2 & 1 & 3 & 2 & 1 \\ 
-Cement/bitumen (E) & 1 & 1 & 2 & 2 & 3 & 3 \\ 
+OPC/bitumen (E) & 1 & 1 & 2 & 2 & 3 & 3 \\ 
 \bottomrule
 \end{tabularx}
 \end{table*}
 
-However, there is lack of reported experience regarding the optimisation of different mixtures of binders for stabilisation purposes specifically for Sweden. Selected papers reported cases of binder optimisation using deep mixing methods, for instance at the SGI \cite{Holm2001,Holm2003}. Regarding the strength development under the effects of additives added to different soil type there is following experience in the SGI. For high-plasticity clayey silt (MH) cement usually demonstrates very good effects, lime-cement blend -- good effect, lime is satisfactory for soil stabilization. 
+However, there is lack of reported experience regarding the optimisation of different mixtures of binders for stabilisation purposes specifically for Sweden. Selected papers reported cases of binder optimisation using deep mixing methods, for instance at the SGI \cite{Holm2001,Holm2003}. Regarding the strength development under the effects of additives added to different soil type there is following experience in the SGI. For high-plasticity clayey silt (MH) OPC usually demonstrates very good effects, lime-OPC blend -- good effect, lime is satisfactory for soil stabilization. 
 
 \begin{figure}[H]\centering
 	\includegraphics[width=0.99\linewidth]{Fig_01.jpg}
 	\caption{Binders traditionally used for DMM}\label{fig1}
 \end{figure} 
 
-For low plasticity silty clay (CL) cement has the best effects, followed by the lime-cement and lime with equally good effect. Likewise, high plasticity clay (CH) is best stabilized by cement with excellent effects, followed by the lime-cement and lime with equally good effect. The experimental results from existing works show difference between the stabilisation and fieldwork DMM, since the last one is used in the \emph{in-situ} conditions with dominating soft high plasticity clay (CH). Therefore, such methods does not include laboratory-based compaction works. At the same time, the compaction is one of the essential parameters required for soil stabilization. 
+For low plasticity silty clay (CL) OPC has the best effects, followed by the lime-OPC and lime with equally good effect. Likewise, high plasticity clay (CH) is best stabilized by OPC with excellent effects, followed by the lime-OPC and lime with equally good effect. The experimental results from existing works show difference between the stabilisation and fieldwork DMM, since the last one is used in the \emph{in-situ} conditions with dominating soft high plasticity clay (CH). Therefore, such methods does not include laboratory-based compaction works. At the same time, the compaction is one of the essential parameters required for soil stabilization. 
 
 According to the different national standards and approaches on methods of soil stabilization with one binder, there are recommendations on laboratory workflow \citep{ArifulHasan,Rogersetal2006}. Traditional and modified techniques of stabilization provide references regarding the improving or optimizing the existing techniques \cite{Roduneretal2015,Kichouetal2015,Wangetal2020,Fahoum,Lindh202210,Lemenkova202222,Sasser,Lindh2003,Sisakhtetal2015}. For assessment of binder blends, multiple and advanced experimental designs are preferrable, including adopted from disciplines or domains. Thus, the test for Initial Consumption of Lime (ICL) is tests the amounts of lime which should be added in order to ensure that the required pH level is reached. The lower level guarantees that the effective pozzolanic reactions with lime will occur. 
 
@@ -102,7 +101,7 @@ According to the different national standards and approaches on methods of soil 
 \end{figure}   
 \unskip
 
-In contrast, in case if the binder consists of lime-slag blend, there is no need to achieve the pH to ensure strength development, as lime and GGBFS can lead to this effect. With regard to the above said, complex design experiments on soil stabilization can be classified in the two groups: 1) to assess the amount of required stabilizing agents; 2) to test the ratios of binders with respect to the proportions of selected components in a blended mixture. 
+In contrast, in case if the binder consists of lime-GGBFS blend, there is no need to achieve the pH to ensure strength development, as lime and GGBFS can lead to this effect. With regard to the above said, complex design experiments on soil stabilization can be classified in the two groups: 1) to assess the amount of required stabilizing agents; 2) to test the ratios of binders with respect to the proportions of selected components in a blended mixture. 
 
 %\newpage
 %\newpage\phantom{} 
@@ -125,7 +124,7 @@ The aim of the undertaken study was a quantitative-qualitative analysis of binde
 
 \section{Results}
 \subsection{Central Composite Design (CCD) as a Factorial Experiment}
-The method of Central Composite Design (CCD) is one of the most accepted \nth{2}-order experimental designs in engineering based on the response surface methodology (RSM) \cite{Montgomery2019} and matrix approach, \ref{eq1}. 
+The method of Central Composite Design (CCD) is one of the most accepted \nth{2}-order experimental designs in engineering based on the response surface methodology (RSM) \cite{Montgomery2019} and matrix approach, as shown in Equation \ref{eq1}. 
 
 \begin{equation}\label{eq1}
 \begin{bmatrix}
@@ -141,7 +140,7 @@ The method of Central Composite Design (CCD) is one of the most accepted \nth{2}
 
 It comprises the $2^\emph{k}$ factorial with n\textsubscript{f} runs, 2*\emph{k} axial runs, and n\textsubscript{c} centre runs. The \emph{k}=2 CCD is presented in Figure \ref{fig3}. The mathematical approach is based on the matrix which is derived from the axial points, with 2*\emph{k} rows depending on the  factors which mean the binder content. In our case each factor is the binder which is  consecutively located at \emph{a} and all other factors which might influence soil stabilization are at zero. This enables to evaluate the influence of binders as factors controlling the gain of strength. The value of \emph{a} is opted in accordance to the runs of binder testing. Changing values in binders give the design of mixture the required properties which lead to the increased gain in strength of soil.
 
-The input of each factor in this approach is defined at least at three levels, low, high and medium. The response corresponds to the general model equation, Eq. \ref{eq2}.
+The input of each factor in this approach is defined at least at three levels, low, high and medium. The response corresponds to the general model equation, Equation \ref{eq2}.
 
 %\begin{fleqn}
 \begin{equation}\label{eq2}
@@ -155,10 +154,41 @@ y=\beta_0+\beta_{1}x_{1}+\ldots+\beta_{\kappa}x_{\kappa}+\beta_{12}x_{1}x_{2}+\b
 where $\beta_i$ represents the regression coefficient and $\varepsilon$ represents the statistical error so that $\varepsilon\in N(0,\sigma^2)$.
 
 As can be inferred from the formulation of the feature matching problem, fitting a model to the observed values of the dependent variable \emph{y} includes three essential steps of data processing: 
+
 \begin{itemize}
-	\item main impacts for factors $x_1, \ldots x_\kappa$;
-	\item interactions between factors $x_{1}x_{2}, x_{1}x_{3}, \ldots, x_{\kappa-1}x_{\kappa})$; 
+	\item main impacts for factors as components of binder blends $x_1, \ldots x_\kappa$;
+	\item interactions between stabilizing agents  in binder blend as factors $x_{1}x_{2}, x_{1}x_{3}, \ldots, x_{\kappa-1}x_{\kappa})$; 
 	\item quadratic components of factors $x_{1}^2, \ldots, x_{kappa}^2$. 
+\end{itemize}
+
+Modelling binder blends also provides useful information in detection of shear strength development, which can be measured additionally. The presented models for mixture data included the quadratic model and the special cubic model used for testing binder blends. 
+
+Respectively, the quadratic model is formulated using the following Equation \ref{eq3}:
+
+\begin{equation}\label{eq3}
+\begin{aligned}[b]
+y=\beta_{1}x_{1}+\beta_{2}x_{2}+\beta_{3}x_{3}+\beta_{1,2}x_{1}x_{2}+\beta_{1,3}x_{1}x_{3}+\\\beta_{2,3}x_{2}x_{3}+\varepsilon
+\end{aligned}
+\end{equation}
+
+where $\beta_i$ represents the regression coefficient and $\varepsilon$ represents the statistical error, similarly to the Equation \ref{eq2}.
+
+Correspondingly, special cubic model can be expressed as demonstrated in the Equation \ref{eq4}:
+
+\begin{equation}\label{eq4}
+\begin{aligned}[b]
+y=\beta_{1}x_{1}+\beta_{2}x_{2}+\beta_{3}x_{3}+\beta_{1,2}x_{1}x_{2}+\beta_{1,3}x_{1}x_{3}+\\\beta_{2,3}x_{2}x_{3}+\beta_{1,2,3}x_{1}x_{2}x_{3}+\varepsilon
+\end{aligned}
+\end{equation}
+
+where $\beta_i$ represents the regression coefficient and $\varepsilon$ represents the statistical error, respectively. As one can note, the difference between these models consists in a special approach of cubic model which applies a test for interactions between all the factors $x_{1}x_{2}x_{3}$, sf. Equations \ref{eq2}, \ref{eq3} and \ref{eq4}.
+
+Evaluating the effects from binders on soil stabilization through a series of experiments can be used to detect the influence of each component of blend on the particular soil specimen with regard to the soil type and specifics: mineral and moisture content. With this regard, we have performed the quantitative evaluation of binder reaction and assessed the effectiveness of the low, medium and high levels of binder content independently. To ensure the robustness of the quantitative evaluation, a single level was chosen, i.e., 2.5\% stabilisation agent per dry weight of soil. If the blended binders which is consisted of three different stabilizing agents, such as OPC, lime and GGBFS, the blends can be used as follows:
+
+\begin{itemize}
+	\item [--] Blend 1: OPC = 30\%, lime = 50\%, GGBFS = 20\%
+	\item [--] Blend 2: OPC = 50\%, lime = 50\%, GGBFS = 0\%
+	\item [--] Blend 3: OPC = 100\%, lime = 0\%, GGBFS = 0\%
 \end{itemize}
 
 Note that hypothesis are made concerning the impact of factors to analyse the effects from combinations of the values from the factors \cite{StatSoft}. Using this general model we has benefits in several aspects as follows:
@@ -172,7 +202,7 @@ Note that hypothesis are made concerning the impact of factors to analyse the ef
 	\item The \nth{2}-order models and the CCD as a factorial experiments perform a close link and can be used complementarily. 
 \end{enumerate}
 
-The CCD with $\kappa=2$ is a $2^2$ factorial design which employs the combinatorial approach to solving the optimisation problem with 4 axial runs, Figure \ref{fig3}(a). This design includes loops used to fit the \nth{2}-order model \cite{Montgomery2019}. If a face-centred CCD with a $\kappa=2$  the treatment combination is applied exactly as in a $3^2$ design,  Figure \ref{fig3}(b). Discovered correspondences by the CCD and factorial design also includes certain constraints on factor combinations for a standard CCD. 
+The CCD with $\kappa=2$ is a $2^2$ factorial design which employs the combinatorial approach to solving the optimisation problem with 4 axial runs, Figure \ref{fig3}(a). This design includes loops used to fit the \nth{2}-order model \cite{Montgomery2019}. If a face-centred CCD with a $\kappa=2$  the treatment combination is applied exactly as in a $3^2$ design,  Figure \ref{fig3}(b). The discovered correspondences by the CCD and factorial design also includes certain constraints on factor combinations for a standard CCD. 
 
 \newpage
 \begin{figure}[H]
@@ -181,7 +211,7 @@ The CCD with $\kappa=2$ is a $2^2$ factorial design which employs the combinator
 \end{figure}   
 \unskip
 
-Thus, a high level of both binders (cement and lime) is not applicable since both binders require for water which leads to the conflict of variables. Figure \ref{fig3}(c) demonstrates this difference in applicability region. The observed cases in the first experimental design comprise cement, lime and water as independent variables in CCD for $\kappa=3$. 
+Thus, a high level of both binders (OPC and lime) is not applicable since both binders require for water which leads to the conflict of variables. Figure \ref{fig3}(c) demonstrates this difference in applicability region. The observed cases in the first experimental design comprise OPC, lime and water as independent variables in CCD for $\kappa=3$. 
 
 \subsection{Specimen collection and processing}
 The soil used in this study is clay till specimens collected from the Yttre Ringvägen, a ring road in Malmö in southern Scania, Sweden. This clay till is being used as embankment fill material for the connecting road for the Öresund bridge. The specimens were excavated from the test pit in the location Petersborg. During the laboratory workflow, all the materials were passed through a 19 mm sieve, with those >19 mm (coarse-grained) excluded from further processing. 
@@ -196,10 +226,10 @@ The processing included evaluation of factors as response variables, which were 
 
 Water content demonstrated variations in the test range with theoretical value at 14.8\%, modelled values ranging from 15.5 to 16.5\%, and actual water content in the clay till lying in a range of 15.1\% to 17.4\%. The variation in water content and grading was minimised during the experiment.
 
-\subsection{Effects from cement and quicklime}
-Cement and quicklime were tested as independent variables during the \nth{2} experimental design of the face centre CCD for $\kappa=2$. The face centre design was applied to compare the performance and the effect of both mixed and unmixed binders, \emph{i.e.}, cement and quicklime. In this case, the design shown in Figure \ref{fig3}(a) was changed to that shown in Figure \ref{fig3}(b) with low values were assigned to zero. Statistically, this conforms that 8 of the tested design points were comprised of stabilised material and one unstabilized, i.e., the unstabilized specimens form the part of the empirically tested region. 
+\subsection{Effects from OPC and quicklime}
+OPC and quicklime were tested as independent variables during the \nth{2} experimental design of the face centre CCD for $\kappa=2$. The face centre design was applied to compare the performance and the effect of both mixed and unmixed binders, \emph{i.e.}, OPC and quicklime. In this case, the design shown in Figure \ref{fig3}(a) was changed to that shown in Figure \ref{fig3}(b) with low values were assigned to zero. Statistically, this conforms that 8 of the tested design points were comprised of stabilised material and one unstabilized, i.e., the unstabilized specimens form the part of the empirically tested region. 
 
-Here two design points corresponded to the pure lime and pure cement, respectively for the tested with low values assigned to zero. The meaning of this step is to avoid the negative values in the star points which would arise if the low values in a standard CCD had been set to zero which would result in the infeasible design of the experiment. Figure \ref{fig5}(a) and Figure \ref{fig5}(b) shows the results from these empirical tests with the difference that in Figure \ref{fig5}(a) only depicts the significant effects shown in the surface, while in Figure \ref{fig5}(b) illustrates all the effects which were considered to draw the surface.  
+Here two design points corresponded to the pure lime and pure OPC, respectively for the tested with low values assigned to zero. The meaning of this step is to avoid the negative values in the star points which would arise if the low values in a standard CCD had been set to zero which would result in the infeasible design of the experiment. Figure \ref{fig5}(a) and Figure \ref{fig5}(b) shows the results from these empirical tests with the difference that in Figure \ref{fig5}(a) only depicts the significant effects shown in the surface, while in Figure \ref{fig5}(b) illustrates all the effects which were considered to draw the surface.  
 
 \begin{figure}[H]
 	\includegraphics[width=0.99\linewidth]{Fig_05.jpg}
@@ -288,24 +318,13 @@ To increase the resolution, the experimental setup can be adjusted by the increa
 \section{Discussion}
 In this study we proposed an approach to evaluation of the amount of binders needed for soil stabilization. In some cases the amount of binder is set to a defined permanent value, or the interaction between the various stabilizing agents for a fixed level which are regarded as a mixture of designs that need to be applied. Careful assessment of binder proportions enables to take the advantages from the stabilisation agents constituting the binder blend. The sum of the components in the mixture design is set to be constant, that is, the amount of binders is not an independent variable but always count for 100\%, regardless of the ratio of binders in each particular test case. 
 
-Evaluating the effects from binders on soil stabilization through a series of experiments can be used to detect the influence of each component of blend on the particular soil specimen with regard to the soil type and specifics: mineral and moisture content. With this regard, we have performed the quantitative evaluation of binder reaction and assessed the effectiveness of the low, medium and high levels of binder content independently. To ensure the robustness of the quantitative evaluation, a single level was chosen, i.e., 2.5\% stabilisation agent per dry weight of soil. If the blended binders which is consisted of three different stabilizing agents, such as cement, lime and GGBFS, the blends can be used as follows:
-
-\begin{itemize}
-	\item [--] Blend 1: cement = 30\%, lime = 50\%, slag = 20\%
-	\item [--] Blend 2: cement = 50\%, lime = 50\%, slag = 0\%
-	\item [--] Blend 3: cement = 100\%, lime = 0\%, slag = 0\%
-\end{itemize}
-
-As a proposed mixed binder blends for various types of soil, tested Blend 1 is an example of complete mixture, fabricated of all three of the binders. Blend 2 is a modified binary blend where we excluded the influence of the GGBFS, and the impact of Portland cement and lime is equal (50/50\%). Our single-binder Blend 3 is a pure blend containing only ordinary Portland cement. It is always desirable to enhance the power of binders on strength development during soil stabilization. Therefore, we modelled these modifications of binders and tested their effects on soil-binder mixture. 
-
-Modelling binder blends also provides useful information in detection of shear strength development, which can be measured additionally. The presented models for mixture data included the quadratic model and the special cubic model used for testing binder blends. The quadratic model is formulated using the following equation:
-
+It is always desirable to enhance the power of binders on strength development during soil stabilization. Therefore, we modelled these modifications of binders and tested their effects on soil-binder mixture. As a proposed mixed binder blends for various types of soil, tested Blend 1 is an example of complete mixture, fabricated of all three of the binders. Blend 2 is a modified binary blend where we excluded the influence of the GGBFS, and the impact of OPC and lime is equal (50/50\%). Our single-binder Blend 3 is a pure binder containing OPC only up to 100\%. 
 
 \section{Conclusions}
 
 In this paper, we introduced a framework for selecting optimal amounts of binders used for soil stabilization with a case study of clay soils collected from the region of Yttre Ringvägen, a ring road in Malmö, southern Sweden. A novel framework for adjusting binder content was proposed. Three approaches of the RSM techniques were tested for evaluation of soil performance stabilised using various binder types. The results were compared and presented using Pareto charts. The methods assessed in this study area: 1) Central Composite Design (CCD); 2) Box-Behnken Design (BBD); 3) Simplex Lattice Design. 
 
-We used clay tills from the embankment fill material collected from the test places connecting road for the Öresund bridge, southern Scania region of Sweden. The performed experimental design proved to be a perfect tool for improving the efficiency and quality of various methods of testing soil quality and performance after stabilization with various binders: cement, slag, and lime. Besides, the aforementioned comparisons of various stabilising agents and the performance of soil upon treatment we also conducted the statistically significant test using the ANOVA approach implemented in Statistica software. From the achieved results, we can conclude that the difference between the testing methods is statistically significant (p-values are all smaller than 0.05 significance level). Namely, we noted that cement, lime and the interaction between cement and lime are significant at p = 0.05 and that the quadratic effects of cement and lime are not significant.
+We used clay tills from the embankment fill material collected from the test places connecting road for the Öresund bridge, southern Scania region of Sweden. The performed experimental design proved to be a perfect tool for improving the efficiency and quality of various methods of testing soil quality and performance after stabilization with various binders: OPC, slag, and lime. Besides, the aforementioned comparisons of various stabilising agents and the performance of soil upon treatment we also conducted the statistically significant test using the ANOVA approach implemented in Statistica software. From the achieved results, we can conclude that the difference between the testing methods is statistically significant (p-values are all smaller than 0.05 significance level). Namely, we noted that OPC, lime and the interaction between OPC and lime are significant at p = 0.05 and that the quadratic effects of OPC and lime are not significant.
 
 To demonstrate the capability of various binder and their influence on soil stabilization and strength development, two approaches were tested: a design for evaluating the amount of binder and a design to evaluate the interaction between several binders. The proposed method is capable of incorporating the RMS which as an effective tool for geotechnical experiments. We showed that the CCD using the robust functionality is essential for assessment of the amount and type of stabilizing agents. Additionally we indicated that BBD can be used for statistical tests. 
 
@@ -325,26 +344,28 @@ The specific value of our research is that the methods and techniques have been 
 
 The enhanced properties of binders with regard to modified and updated performance can be applied in engineering construction works, which is difficult using traditional ways of tests that are usually expensive, time-consuming and laborious. Further experiments on testing binder blends by the means of statistical analysis demonstrates its potential applications in civil engineering, applied material science and geotechnical studies. This paper is an important point in further development of these directions combining methods of statistical data analysis, theoretical logic and data science, combinatorics and practical engineerings.
 
+\newpage
 \section{Abbreviations and notations}\label{symb}
 \begin{nomenclature}
-\item{UCS}{Unconfined Compressive Strength}
-\item{BBD}{Box-Behnken Design}
+\item{Adj}{Adjusted $R^2$}
 \item{ANOVA}{ANalysis Of VAriance}
+\item{BBD}{Box-Behnken Design}
 \item{CCD}{Central Composite Design}
+\item{df}{Degrees of freedom}
 \item{DMM}{Deep Mixing Method}
+\item{F}{F test. $F=MS_{treatments}/MS_{e}$}
 \item{GGBFS}{Ground Granulated Blast Furnace Slag}
 \item{ICL}{Initial Consumption of Lime}
 \item{MCV}{Moisture Compaction Value}
+\item{MS}{Means of squares}
 \item{OMC}{Optimum Moisture Content}
+\item{OPC}{Ordinary Portland Cement}
+\item{R-sqr}{Coefficient of multiple determination (=$1-SS_{e}/SS_{t}$)}
 \item{RSM}{Response Surface Methodology}
 \item{SGI}{Swedish Geotechnical Institute}
-\item{R-sqr}{Coefficient of multiple determination (=$1-SS_{e}/SS_{t}$)}
-\item{Adj}{Adjusted $R^2$}
 \item{SS}{Sum of Squares, for each treatment, error and total}
-\item{df}{Degrees of freedom}
-\item{MS}{Means of squares}
-\item{F}{F test. $F=MS_{treatments}/MS_{e}$}
 \item{p}{p-level}
+\item{UCS}{Unconfined/Uniaxial Compressive Strength}
 \end{nomenclature}
 
 \begin{acknowledgements}
