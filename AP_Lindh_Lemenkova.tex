@@ -204,14 +204,14 @@ Note that hypothesis are made concerning the impact of factors to analyse the ef
 
 The CCD with $\kappa=2$ is a $2^2$ factorial design which employs the combinatorial approach to solving the optimisation problem with 4 axial runs, Figure \ref{fig3}(a). This design includes loops used to fit the \nth{2}-order model \cite{Montgomery2019}. If a face-centred CCD with a $\kappa=2$  the treatment combination is applied exactly as in a $3^2$ design,  Figure \ref{fig3}(b). The discovered correspondences by the CCD and factorial design also includes certain constraints on factor combinations for a standard CCD. 
 
+Thus, a high level of both binders (OPC and lime) is not applicable since both binders require for water which leads to the conflict of variables. Figure \ref{fig3}(c) demonstrates this difference in applicability region. The observed cases in the first experimental design comprise OPC, lime and water as independent variables in CCD for $\kappa=3$. 
+
 \newpage
 \begin{figure}[H]
 	\includegraphics[width=0.80\linewidth]{Fig_03.jpg}
 	\caption{(a): CCD for k=2 with start points and rotatable \nth{2}-order designs. (b): $3^2$ factorial design; (c): A comparison between the 2-factor CCD (continuous line) and a $2^2$ factorial design (dashed line).}\label{fig3}
 \end{figure}   
 \unskip
-
-Thus, a high level of both binders (OPC and lime) is not applicable since both binders require for water which leads to the conflict of variables. Figure \ref{fig3}(c) demonstrates this difference in applicability region. The observed cases in the first experimental design comprise OPC, lime and water as independent variables in CCD for $\kappa=3$. 
 
 \subsection{Specimen collection and processing}
 The soil used in this study is clay till specimens collected from the Yttre Ringvägen, a ring road in Malmö in southern Scania, Sweden. This clay till is being used as embankment fill material for the connecting road for the Öresund bridge. The specimens were excavated from the test pit in the location Petersborg. During the laboratory workflow, all the materials were passed through a 19 mm sieve, with those >19 mm (coarse-grained) excluded from further processing. 
@@ -229,18 +229,36 @@ Water content demonstrated variations in the test range with theoretical value a
 \subsection{Effects from OPC and quicklime}
 OPC and quicklime were tested as independent variables during the \nth{2} experimental design of the face centre CCD for $\kappa=2$. The face centre design was applied to compare the performance and the effect of both mixed and unmixed binders, \emph{i.e.}, OPC and quicklime. In this case, the design shown in Figure \ref{fig3}(a) was changed to that shown in Figure \ref{fig3}(b) with low values were assigned to zero. Statistically, this conforms that 8 of the tested design points were comprised of stabilised material and one unstabilized, i.e., the unstabilized specimens form the part of the empirically tested region. 
 
-Here two design points corresponded to the pure lime and pure OPC, respectively for the tested with low values assigned to zero. The meaning of this step is to avoid the negative values in the star points which would arise if the low values in a standard CCD had been set to zero which would result in the infeasible design of the experiment. Figure \ref{fig5}(a) and Figure \ref{fig5}(b) shows the results from these empirical tests with the difference that in Figure \ref{fig5}(a) only depicts the significant effects shown in the surface, while in Figure \ref{fig5}(b) illustrates all the effects which were considered to draw the surface.  
-
 \begin{figure}[H]
 	\includegraphics[width=0.99\linewidth]{Fig_05.jpg}
 	\caption{(a): The significant differences in water content depend on type and amount of binder; (b): The difference in water content depends on the type and amount of binder not adjusted for significance}\label{fig5}
 \end{figure}   
 \unskip
 
-The experimental loop comprised 40 specimens, which signifies that each point in the design signifies four specimens, except for the centre point which stands for eight samples. Major linear effects and the 2-way interconnections significantly impacted the variations in the water content.
+Here two design points corresponded to the pure lime and pure OPC, respectively for the tested with low values assigned to zero. The meaning of this step is to avoid the negative values in the star points which would arise if the low values in a standard CCD had been set to zero which would result in the infeasible design of the experiment. Figure \ref{fig5}(a) and Figure \ref{fig5}(b) shows the results from these empirical tests with the difference that in Figure \ref{fig5}(a) only depicts the significant effects shown in the surface, while in Figure \ref{fig5}(b) illustrates all the effects which were considered to draw the surface.  
+
+The response surface in Figure \ref{fig5}(a) is represented by the fitted function using the following Equation \ref{eq5}, (cf. Eq. \ref{eq1}). 
+
+\begin{equation}\label{eq5}
+\begin{aligned}[b]
+w=15.2 -27*OPC-63.7*Ql+738.0*OPC*Ql 
+\end{aligned}
+\end{equation}
+
+This equation only includes the significant terms as of OPC, lime and the interaction term OPC*quicklime (here: Ql). Correspondingly, the response surface in Figure \ref{fig5}(b) is expressed by the following fitted function in Equation \ref{eq6}:
+
+\begin{equation}\label{eq6}
+\begin{aligned}[b]
+w=15.2-31.1OPC+68.4OPC2-31*Ql-\\1634.2*Ql+738*OPC*Ql
+\end{aligned}
+\end{equation}
+
+In Equation \ref{eq6} all terms are included in the computing of the fitted function. The experimental loop comprised a series of tests with 40 specimens, which signifies that each point in the design signifies four specimens, except for the centre point which stands for eight samples. Major linear effects and the 2-way interconnections significantly impacted the variations in the water content.
 
 \subsection{ANOVA}
 We estimated the design of the experiment by the analysis of variance (ANOVA) technique with the significance level at 0.05. The ANOVA was used to confirm that there is no linear or quadratic main effects from the factors and no interaction between them, respectively. The results of the ANOVA are summarised in Table \ref{tab:2} with p levels described as the probability of rejecting the null hypothesis when it is actually true. In the case of p=0.05 this means that there are 5\% probability that any relation between variables identified in the samples is random \cite{StatSoft}. The notations used in Table \ref{tab:2} are defined in the List of Symbols \ref{symb}.
+
+Table \ref{tab:2} demonstrates that there is an interaction between quicklime and OPC, as indicated in Figures \ref{fig8} and \ref{fig9}. The interaction between quicklime and OPC is significant even at p=0.01. These results are also presented in the Pareto chart in Figure \ref{fig6} where a column presents the effects from the ANOVA summarised in Table \ref{tab:2}. These effects are organised and presented categorically by the magnitude of values. The Pareto chart enables to estimate the magnitude, or the values of the effect, which should be achieved to be statistically significant according  to level p. Thus, Figure \ref{fig5}(b) shows that OPC, Ql and the interaction between them, respectively, are significant at level of p=0.05. Besides, the quadratic effects from the OPC and Ql are not significant. There are no \nth{2} order terms in this equation, since it is reduced and modified according to the values of the significant effects, cf. with Table \ref{tab:2}.
 
 %\begin{table}[htbp]
 \begin{table*}[t]
@@ -290,6 +308,11 @@ Total SS & 16.923 & 39 & -- & -- & -- \\
 \end{figure*}   
 \unskip
 
+\section{Box-Behnken Design (BBD)}
+The Box-Behnken Design is an experimental design which determines the amount of binders \cite{Boxetal2005}. Similar to the case of CCD, each factor is evaluated at the three hierarchical levels: low medium and high. By visual comparing the BBD in Figure \ref{fig10}(a), one can note that the origin is located at a cube corner and the points in the corners of the cube and face points are absent. Such a design of BBD quantifies the predicting of the response for a pure binder which does not includes the stabilisation agents, as it is constrained with to the low and high levels. 
+
+The benefits of the BBD design consists in its optimisation with respect to the economical limitations, because it is particularly useful in modelling very expensive tests and experimental runs. In the BBD design the minimum number of factors is three. Thus, if the design has >3 various binders, the high level of all binders is not considered, which presents a positive modelling effect, because  if the region of interest is between 1-5\% for the 3 binders, the total amount of binders will otherwise be 15\% if all high levels are used at the same time and this is not appropriate in most cases. Thus, the BBD designed is optimised for the minimum number of factors at 3. Therefore, the BBD design was applied to estimate the time of performance and effects from 3 different binders at 3 different curing periods before compaction. We used the BBD in case when the standard CCD could not be used due to the star points with time variable was set to 1, 3 and 5 hours of curing.
+
 \begin{figure}[H]
 	\includegraphics[width=0.99\linewidth]{Fig_10.jpg}
 	\caption{(a): Box-Behnken design for 3 factors with a centre point; (b): Simplex-Lattice design $3^2$}\label{fig10}
@@ -301,11 +324,6 @@ Total SS & 16.923 & 39 & -- & -- & -- \\
 	\caption{Pareto charts and RMS from simplex lattice design with UCS as a response variable. Subfigures C and D -- quadratic model; A and B -- \emph{idem} with interior points. Notable effects are visible in subfigures A and C}\label{fig11}
 \end{figure*}   
 \unskip
-
-\section{Box-Behnken Design (BBD)}
-The Box-Behnken Design is an experimental design which determines the amount of binders \cite{Boxetal2005}. Similar to the case of CCD, each factor is evaluated at the three hierarchical levels: low medium and high. By visual comparing the BBD in Figure \ref{10}(a), one can note that the origin is located at a cube corner and the points in the corners of the cube and face points are absent. Such a design of BBD quantifies the predicting of the response for a pure binder which does not includes the stabilisation agents, as it is constrained with to the low and high levels. 
-
-The benefits of the BBD design consists in its optimisation with respect to the economical limitations, because it is particularly useful in modelling very expensive tests and experimental runs. In the BBD design the minimum number of factors is three. Thus, if the design has >3 various binders, the high level of all binders is not considered, which presents a positive modelling effect, because  if the region of interest is between 1-5\% for the 3 binders, the total amount of binders will otherwise be 15\% if all high levels are used at the same time and this is not appropriate in most cases. Thus, the BBD designed is optimised for the minimum number of factors at 3. Therefore, the BBD design was applied to estimate the time of performance and effects from 3 different binders at 3 different curing periods before compaction. We used the BBD in case when the standard CCD could not be used due to the star points with time variable was set to 1, 3 and 5 hours of curing.
 
 \section{Simplex Lattice Design}
 We used the proposed simplex design which consists of the two parts: 1) simplex-lattice; 2) simplex-centroid design. These two types of design are complemented with constraints. The real-time conditions accurately record changing state of the computed variables. Thus, if binder requires an activator, e.g., GGBFS, its pure blend will affect the results of the test which requires the assignment of the upper constraint. Figure \ref{fig10}(b) demonstrates the design for the three components and simplex lattice design of the polynomial order 2.
