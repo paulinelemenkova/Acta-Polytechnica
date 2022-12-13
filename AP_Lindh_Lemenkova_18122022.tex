@@ -4,6 +4,10 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage{soul}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{array}
+\usepackage[flushleft]{threeparttable}
 
 \newcommand*\printft[1]{\textsc{\lowercase{#1}}}
 
@@ -62,12 +66,13 @@ A mixture of two or three different binders is commonly acceptable for soil stab
 
 Blended binders have been successfully used for the past thirty years for the purpose of soil stabilization \cite{Ghazy,Consolietal2019,Lindh2001,Leeetal2019,Filho,Yietal2014,Guetal2014,Yangetal2015}. To improve the efficiency of soil stabilisation, some commercial binder suppliers developed their own blends of binders. Such binders can be classified as follows: 1). General Purpose (GP) OPC; 2). General Blend (GB) OPC; 3). OPCitious triple and quaternary blends of binders mixed from combinations of fly ash, GP OPC, ground granulated blast furnace slag (GGBFS) and lime; 4). Hydrated lime; 5). OPC/asphalt blends. In Sweden the use of blended binders is increasingly raising since 1970s, Figure \ref{fig1}. The Swedish OPC and lime industry encouraged the use of additives with regard to soil type, Figure \ref{fig2}. Nowadays, the use of mixed binders in deep mixing have increased up to 100\%, see Figure \ref{fig1}.   
 
-The applicability of different binders is summarised in Table \ref{tab:1}. The notations in the Table \ref{tab:1}: GP - Poorly graded gravel and rushed rock; GW - Well-graded gravel; GM - Silty gravel; GC - Clayey gravel; SP - clean sand, poorly graded; SW - Clean sand - well graded; CL - Low plasticity sandy/silty clay; CH - High plasticity heavy clay. 1 – Excellent; 2 – Satisfactory; 3 – Not suitable.
+The applicability of different binders is summarised in Table \ref{tab:1}\hl{.} 
 
 %\begin{table}[htbp]
 \begin{table*}[t]
+\begin{threeparttable}
 \centering
-\caption{Applicability of binders for soil types \label{tab:1}}
+\caption{Applicability of binders for soil types. \hl{Source: modified after} \cite{AustStab} \label{tab:1}}
 \begin{tabularx}{\textwidth}{c *{6}{Y}}
 \toprule
 Binder type & \multicolumn{4}{c}{Course-grained soil} & \multicolumn{2}{c}{Fine-grained soil}\\
@@ -83,7 +88,13 @@ Lime (D) & 2 & 2 & 1 & 3 & 2 & 1 \\
 OPC/bitumen (E) & 1 & 1 & 2 & 2 & 3 & 3 \\ 
 \bottomrule
 \end{tabularx}
+\begin{tablenotes}
+      \small
+      	\item \textcolor{blue}{\emph{Notations for Table 1.} GP - Poorly graded gravel and rushed rock; GW - Well-graded gravel; GM - Silty gravel; GC - Clayey gravel; SP - clean sand, poorly graded; SW - Clean sand - well graded; CL - Low plasticity sandy/silty clay; CH - High plasticity heavy clay. 1 – Excellent; 2 – Satisfactory; 3 – Not suitable.}
+    \end{tablenotes}
+  \end{threeparttable}
 \end{table*}
+
 
 However, there is lack of reported experience regarding the optimisation of different mixtures of binders for stabilisation purposes specifically for Sweden. Selected papers reported cases of binder optimisation using deep mixing methods, for instance at the SGI \cite{Holm2001,Holm2003}. Regarding the strength development under the effects of additives added to different soil type there is following experience in the SGI. For high-plasticity clayey silt (MH) OPC usually demonstrates very good effects, lime-OPC blend -- good effect, lime is satisfactory for soil stabilization. 
 
@@ -403,7 +414,7 @@ The enhanced properties of binders with regard to modified and updated performan
 \end{nomenclature}
 
 \begin{acknowledgements}
-We acknowledge the Cementa (HeidelbergCement AG Group -- Northern Europe), Nordkalk AB, Swedish National Board for Industrial and Technical Development (NUTEK) and Peab AB for their support of this study. The authors gratefully acknowledge  valuable assistance of Prof. Dr. Björn Holmqvist from the Department of Statistics, Lund University and Prof. Dr. Em. Igor Rychlik from the Centre for Mathematical Sciences, Chalmers University of Technology. We appreciate critical comments, corrections and remarks from the two anonymous reviewers which improved the initial version of this manuscript. Polina Lemenkova was supported by the Federal Public Planning Service Science Policy or Belgian Science Policy Office, Federal Science Policy -- BELSPO (B2/202/P2/SEISMOSTORM.
+\textcolor{blue}{We acknowledge the Cementa (HeidelbergCement AG Group -- Northern Europe), Nordkalk AB, Swedish National Board for Industrial and Technical Development (NUTEK) and Peab AB for their support of this study. The authors gratefully acknowledge  valuable assistance of Prof. Dr. Björn Holmqvist from the Department of Statistics, Lund University and Prof. Dr. Em. Igor Rychlik from the Centre for Mathematical Sciences, Chalmers University of Technology. We appreciate critical comments, corrections and remarks from the two anonymous reviewers which improved the initial version of this manuscript. Polina Lemenkova was supported by the Federal Public Planning Service Science Policy or Belgian Science Policy Office, Federal Science Policy -- BELSPO (B2/202/P2/SEISMOSTORM.}
 \end{acknowledgements}
 
 
